@@ -1,17 +1,14 @@
-# npm-template
+# Events
 
-A template repo for modules, published on npm, with basic setup development dependencies installed.
+A simple pub/sub event service.
 
-## Usage:
+## Usage
 
-- Install dependencies: `$ npm install`
-- Change package name, description and git repo in package.json
-- Create module in package.js
-- Change this README file
-- Publish to npm: `$ npm publish --access public`
-
-Install:
-
-```
-$ npm install @perugi/changeme
+```js
+events = Events();
+const cb1 = (data) => console.log(`event1 called with data: ${data}`);
+events.on('event1', cb1);
+events.emit('event1', 'data1'); // event1 called with data: data1
+events.off('event1', cb1)
+events.emit('event1', 'data2'); 
 ```

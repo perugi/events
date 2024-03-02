@@ -1,22 +1,23 @@
 {
-  "name": "@perugi/changeme",
+  "name": "@perugi/events",
   "version": "1.0.0",
   "type": "module",
-  "description": "CHANGEME",
-  "main": "package.js",
+  "description": "A simple pub/sub event service.",
+  "main": "Events.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "watch": "jest --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/perugi/CHANGEME.git"
+    "url": "git+https://github.com/perugi/events.git"
   },
   "author": "Dominik Perusko",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/perugi/CHANGEME/issues"
+    "url": "https://github.com/perugi/events/issues"
   },
-  "homepage": "https://github.com/perugi/CHANGEME#readme",
+  "homepage": "https://github.com/perugi/events#readme",
   "devDependencies": {
     "@babel/core": "^7.23.9",
     "@babel/preset-env": "^7.23.9",
