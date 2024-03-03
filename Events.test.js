@@ -1,4 +1,4 @@
-import Events from './Events';
+const Events = require('./Events');
 
 test('callback not called when not subscribed', () => {
   const events = new Events();

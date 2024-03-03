@@ -1,7 +1,6 @@
 {
   "name": "@perugi/events",
-  "version": "1.0.0",
-  "type": "module",
+  "version": "1.0.1",
   "description": "A simple pub/sub event service.",
   "main": "Events.js",
   "scripts": {
